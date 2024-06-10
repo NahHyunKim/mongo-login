@@ -1,0 +1,161 @@
+Server is started on http://127.0.0.1:8000
+MongoDB Connection Succeeded.
+profile
+data
+{
+  _id: 6664945891cca0d2b7628ba6,
+  unique_id: 2,
+  email: 'suk02177@naver.com',
+  username: 'iksu',
+  password: 'gusskrla6837',
+  passwordConf: 'gusskrla6837',
+  company: 'Datasolution',
+  school: 'Seoultech',
+  __v: 0
+}
+Server is started on http://127.0.0.1:8000
+MongoDB Connection Succeeded.
+/home/ubuntu/mongo-login/routes/index.js:17
+		}
+		^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/ubuntu/mongo-login/server.js:43:13)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.13.1
+Server is started on http://127.0.0.1:8000
+MongoDB Connection Succeeded.
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (/home/ubuntu/mongo-login/node_modules/express/lib/response.js:795:10)
+    at ServerResponse.send (/home/ubuntu/mongo-login/node_modules/express/lib/response.js:175:12)
+    at /home/ubuntu/mongo-login/server.js:57:7
+    at Layer.handle_error (/home/ubuntu/mongo-login/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:326:13)
+    at /home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/ubuntu/mongo-login/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:326:13)
+    at /home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:646:15
+    at IncomingMessage.next (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:265:14)
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (/home/ubuntu/mongo-login/node_modules/express/lib/response.js:795:10)
+    at ServerResponse.contentType (/home/ubuntu/mongo-login/node_modules/express/lib/response.js:625:15)
+    at ServerResponse.send (/home/ubuntu/mongo-login/node_modules/express/lib/response.js:150:14)
+    at /home/ubuntu/mongo-login/server.js:57:7
+    at Layer.handle_error (/home/ubuntu/mongo-login/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:326:13)
+    at /home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/ubuntu/mongo-login/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:326:13)
+    at /home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/mongo-login/node_modules/express/lib/router/index.js:646:15
+Server is started on http://127.0.0.1:8000
+MongoDB Connection Succeeded.
+logout
+Server is started on http://127.0.0.1:8000
+MongoDB Connection Succeeded.
+logout
+profile
+data
+{
+  _id: 6664945891cca0d2b7628ba6,
+  unique_id: 2,
+  email: 'suk02177@naver.com',
+  username: 'iksu',
+  password: 'gusskrla6837',
+  passwordConf: 'gusskrla6837',
+  company: 'Datasolution',
+  school: 'Seoultech',
+  __v: 0
+}
+logout
+logout
+profile
+data
+{
+  _id: 6664945891cca0d2b7628ba6,
+  unique_id: 2,
+  email: 'suk02177@naver.com',
+  username: 'iksu',
+  password: 'gusskrla6837',
+  passwordConf: 'gusskrla6837',
+  company: 'Datasolution',
+  school: 'Seoultech',
+  __v: 0
+}
+profile
+data
+{
+  _id: 6664945891cca0d2b7628ba6,
+  unique_id: 2,
+  email: 'suk02177@naver.com',
+  username: 'iksu',
+  password: 'gusskrla6837',
+  passwordConf: 'gusskrla6837',
+  company: 'Datasolution',
+  school: 'Seoultech',
+  __v: 0
+}
+Server is started on http://127.0.0.1:8000
+MongoDB Connection Succeeded.
+logout
+[Object: null prototype] {
+  email: 'cherish59@datasolution.kr',
+  username: 'NHKim',
+  password: 'gusskrla6837',
+  passwordConf: 'gusskrla6837',
+  company: 'Datasolution',
+  school: 'SeoulTech'
+}
+if
+Success
+profile
+data
+{
+  _id: 666673e9b597ddd7f02ecd60,
+  unique_id: 3,
+  email: 'cherish59@datasolution.kr',
+  username: 'NHKim',
+  password: 'gusskrla6837',
+  passwordConf: 'gusskrla6837',
+  company: 'Datasolution',
+  school: 'SeoulTech',
+  __v: 0
+}
+logout
+profile
+data
+{
+  _id: 666673e9b597ddd7f02ecd60,
+  unique_id: 3,
+  email: 'cherish59@datasolution.kr',
+  username: 'NHKim',
+  password: 'gusskrla6837',
+  passwordConf: 'gusskrla6837',
+  company: 'Datasolution',
+  school: 'SeoulTech',
+  __v: 0
+}

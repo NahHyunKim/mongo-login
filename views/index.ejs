@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registration</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="./css/main.css">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'GmarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+                 url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
+                 url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
+                 url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'GmarketSans', sans-serif;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+	    background-color: #fcf0ff;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        #LangTable a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        #LangTable a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-	<div class="col-md-4 col-md-offset-4">
-		<div>
-			<h1>Seoultech Login</h1>
-			<h2>We connect the World</h2>
-		</div>
-		
-		<div id="LangTable"><a href="/login" id="aa">Login</a><br>
-		<div id="LangTable"><a href="/register" id="bb">Register</a>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="text-center">
+                    <h1>Seoultech Login</h1>
+                    <h2>We connect the World</h2>
+                </div>
+                <div id="LangTable">
+                    <a href="/login" id="aa" class="btn btn-primary btn-success">Login</a><br>
+                    <a href="/register" id="bb" class="btn btn-secondary btn-success">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+

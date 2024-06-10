@@ -8,15 +8,21 @@ const { v4: uuid} = require("uuid");
 const static_path = path.join(__dirname, "./public" );
 
 router.get('/', function (req, res, next) {
-	if (req.session) {
-		if ( req.session.username != null ) {
-			// login user
-			return res.render('loghome.ejs', {"name":req.session.username,"email":req.session.userId});
-		}
-	}
-	return res.render('index.ejs');
+    if (req.session && req.session.username != null) {
+        // login user
+        User.findOne({ unique_id: req.session.userId }, function (err, data) {
+            if (err) {
+                return res.status(500).send("Internal Server Error");
+            }
+            if (!data) {
+                return res.render('index.ejs');
+            }
+            return res.render('loghome.ejs', { "name": req.session.username, "email": req.session.email, "school": req.session.school, "company": req.session.company });
+        });
+    } else {
+        return res.render('index.ejs');
+    }
 });
-
 
 router.post('/register', function(req, res, next) {
 	console.log(req.body);
@@ -45,7 +51,9 @@ router.post('/register', function(req, res, next) {
 							email:personInfo.email,
 							username: personInfo.username,
 							password: personInfo.password,
-							passwordConf: personInfo.passwordConf
+							passwordConf: personInfo.passwordConf,
+							company: personInfo.company,
+                            				school: personInfo.school
 						});
 
 						newPerson.save(function(err, Person){
@@ -85,6 +93,9 @@ router.post('/login', function (req, res, next) {
 				//console.log("Done Login");
 				req.session.userId = data.unique_id;
 				req.session.username = data.username;
+				req.session.email = data.email;
+				req.session.school = data.school;
+				req.session.company = data.company;
 				//console.log(req.session.userId);
 				res.send({"Success":"Success!"});
 			        //res.render('loghome.ejs', {"name":data.username,"email":data.email});
@@ -107,7 +118,7 @@ router.get('/profile', function (req, res, next) {
 			res.redirect('/');
 		}else{
 			//console.log("found");
-			return res.render('profile.ejs', {"name":data.username,"email":data.email});
+			return res.render('profile.ejs', {"name":data.username,"email":data.email, "school":data.school, "company":data.company});
 		}
 	});
 });
